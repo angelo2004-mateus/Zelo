@@ -17,7 +17,17 @@ A experiência de autenticação tem rotas para `/register`, `/confirm-email`, `
 
 ## Prévia da interface
 
-Execute o projeto e abra **http://127.0.0.1:3000/login**. A tela de login e o espaço autenticado são implementações reais; o dashboard hoje é uma base para os futuros módulos de despesas. Uma captura de tela será incluída aqui quando houver uma captura verificável da aplicação em execução.
+Capturas reais da aplicação em desenvolvimento. O login e a verificação em duas etapas já fazem parte do fluxo de autenticação; o dashboard ainda é a base para os futuros módulos de despesas.
+
+**Login**
+
+![Tela de login do Zelo](docs/images/login.png)
+
+**Verificação em duas etapas**
+
+![Tela de verificação em duas etapas do Zelo](docs/images/two-factor-authentication.png)
+
+Para experimentar, execute o projeto e abra **http://127.0.0.1:3000/login**.
 
 ## Arquitetura
 
