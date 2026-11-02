@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MailKit" Version="4.18.1" />
+    <PackageReference Include="Microsoft.Extensions.Identity.Core" Version="9.0.14" />
+    <PackageReference Include="NHibernate" Version="5.7.0" />
+    <PackageReference Include="Npgsql" Version="9.0.5" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.22.0" />
+    <!-- NHibernate -> Antlr3.Runtime pulls older NETStandard.Library versions. Pin patched transitive packages. -->
+    <PackageReference Include="System.Net.Http" Version="4.3.4" />
+    <PackageReference Include="System.Security.Cryptography.X509Certificates" Version="4.3.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../Zelo.Application/Zelo.Application.csproj" />
+    <ProjectReference Include="../Zelo.Domain/Zelo.Domain.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+      <UserSecretsId>b9c4c083-d57f-4772-b8f6-5be07f94954f</UserSecretsId>
+  </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.10" />
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.10" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="../Zelo.Application/Zelo.Application.csproj" />
+        <ProjectReference Include="../Zelo.Domain/Zelo.Domain.csproj" />
+        <ProjectReference Include="../Zelo.Infrastructure/Zelo.Infrastructure.csproj" />
+    </ItemGroup>
+
+</Project>
