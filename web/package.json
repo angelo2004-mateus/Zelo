@@ -1,0 +1,50 @@
+{
+  "name": "zelo-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --hostname 127.0.0.1",
+    "build": "next build",
+    "start": "next start --hostname 127.0.0.1",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "format": "prettier . --write",
+    "format:check": "prettier . --check",
+    "test": "vitest run",
+    "test:auth": "python3 scripts/auth_smoke.py",
+    "validate": "npm run format:check && npm run lint && npm run typecheck && npm test && npm run build",
+    "dev:api": "python3 scripts/start_api.py",
+    "dev:api:mailpit": "python3 scripts/start_api.py --mailpit",
+    "dev:mail": "python3 scripts/start_mail.py"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "5.9.1",
+    "lucide-react": "1.54.0",
+    "next": "16.4.0",
+    "qrcode": "1.5.4",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "react-hook-form": "7.89.0",
+    "react-router": "7.18.4",
+    "zod": "4.6.5"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "7.0.1",
+    "@testing-library/react": "16.3.3",
+    "@testing-library/user-event": "14.6.7",
+    "@types/node": "26.6.5",
+    "@types/qrcode": "1.5.6",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "eslint": "9.39.5",
+    "eslint-config-next": "16.4.0",
+    "eslint-config-prettier": "10.1.8",
+    "jsdom": "29.1.1",
+    "prettier": "3.9.9",
+    "typescript": "6.0.3",
+    "vitest": "5.0.3"
+  },
+  "engines": {
+    "node": ">=22.19.0"
+  }
+}
