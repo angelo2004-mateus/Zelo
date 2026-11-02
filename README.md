@@ -27,8 +27,6 @@ Capturas reais da aplicação em desenvolvimento. O login e a verificação em d
 
 ![Tela de verificação em duas etapas do Zelo](docs/images/two-factor-authentication.png)
 
-Para experimentar, execute o projeto e abra **http://127.0.0.1:3000/login**.
-
 ## Arquitetura
 
 ```mermaid
@@ -82,7 +80,7 @@ cd web
 npm run dev
 ```
 
-A API inicia em `http://127.0.0.1:5271`; a interface, em `http://127.0.0.1:3000/login`. O script da API cria ou atualiza apenas o banco local `zelo_dev`, aplica as migrações pendentes e grava emails de desenvolvimento em `web/.local/mail/`. O segredo JWT local fica em `web/.local/api.json`; ambos estão fora do Git. Para testar uma caixa virtual, veja as instruções de [Mailpit no README do frontend](web/README.md).
+O script da API cria ou atualiza apenas o banco local `zelo_dev`, aplica as migrações pendentes e grava emails de desenvolvimento em `web/.local/mail/`. O segredo JWT local fica em `web/.local/api.json`; ambos estão fora do Git. Para testar uma caixa virtual, veja as instruções de [Mailpit no README do frontend](web/README.md).
 
 ## Verificar
 
